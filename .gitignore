@@ -1,0 +1,35 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+node_modules
+myenv
+
+# dependencies
+./ems-client/node_modules
+./ems-client/.pnp
+./ems-client.pnp.js
+
+
+# session private data
+./ems-backend/sessions
+./ems-backend/myenv
+./ems-backend/myenv/
+# testing
+./ems-client/coverage
+./ems-backend/*.pyc
+./ems-backend/models/*.pyc
+./ems-backend/controllers/*.pyc
+./ems-backend/sessions
+
+# production
+./ems-client/build
+
+# misc
+./ems-client.DS_Store
+./ems-client.env.local
+./ems-client.env.development.local
+./ems-client.env.test.local
+./ems-client.env.production.local
+
+./ems-client/npm-debug.log*
+./ems-client/yarn-debug.log*
+./ems-client/yarn-error.log*
